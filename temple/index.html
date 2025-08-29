@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Temple Darshan Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Temple Darshan Booking</h1>
+    <form action="submit_booking.php" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="temple">Select Temple:</label>
+      <select name="temple_id" id="temple" required>
+        <!-- These should be loaded dynamically -->
+        <option value="">-- Choose Temple --</option>
+        <option value="1">Tirupati Balaji</option>
+        <option value="2">Vaishno Devi</option>
+        <option value="3">Meenakshi Temple</option>
+        <option value="4">Golden Temple</option>
+        <option value="5">Somnath Temple</option>
+      </select>
+
+      <label for="date">Darshan Date:</label>
+      <input type="date" name="booking_date" id="date" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</body>
+</html>
